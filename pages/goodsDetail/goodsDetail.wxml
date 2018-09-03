@@ -1,0 +1,73 @@
+<view class="" hover-class="none" hover-stop-propagation="false">
+    <swiper class="shadow">
+        <swiper-item class="" item-id="" wx:for="{{swiperImgList}}">
+            <image class="" src="{{item.img}}" mode="widthFix" lazy-load="true" binderror="" bindload=""></image>
+        </swiper-item>
+    </swiper>
+
+    <view class="margin-top-normal shadow bg-white padding-normal" hover-class="none" hover-stop-propagation="false">
+        <view class="font-normal goods-name" style="font-weight: 700">
+            <van-tag wx:if="{{isNew}}" type="danger" style="margin-right: 5px">New</van-tag>
+            <van-tag wx:if="{{isHot}}" type="danger">Hot</van-tag>
+            {{goodsName}}
+        </view>
+        <view class="font-gray font-small margin-top-normal" hover-class="none" hover-stop-propagation="false">
+            {{desc}}
+        </view>
+        <view class="price margin-top-normal text-right" hover-class="none" hover-stop-propagation="false">
+            ￥{{price}}
+        </view>
+        <view class="margin-top-normal font-gray font-small" hover-class="none" hover-stop-propagation="false">
+            <van-row>
+                <van-col span="8" class="text-left">
+                    快递：{{expressPrice}}
+                </van-col>
+                <van-col span="8" class="text-center">
+                    销量：{{selledCount}}
+                </van-col>
+                <van-col span="8" class="text-right">
+                    评论数：{{commentCount}}
+                </van-col>
+            </van-row>
+        </view>
+    </view>
+
+    <view class="shadow margin-top-large" hover-class="none" hover-stop-propagation="false">
+        <van-cell-group>
+            <van-cell title="数量" >
+                <view class="" hover-class="none" hover-stop-propagation="false">
+                    <van-stepper></van-stepper>
+                </view>
+            </van-cell>
+            <van-cell title="总价">
+                <view class="price" hover-class="none" hover-stop-propagation="false">
+                    ￥32.0
+                </view>
+            </van-cell>
+        </van-cell-group>
+    </view>
+    <view class="text-center font-large bg-white" style="position:fixed;bottom:0px;width:100%" hover-class="none" hover-stop-propagation="false">
+        <van-row>
+            <van-col span="4">
+                <view class="border-right" hover-class="none" hover-stop-propagation="false">
+                    <i class="iconfont icon-order margin-normal" style="font-size:20px"></i>
+                </view>
+            </van-col>
+            <van-col span="4" class="">
+                <view class="border-right" hover-class="none" hover-stop-propagation="false">
+                    <i class="iconfont icon-like margin-normal" style="font-size:20px"></i>
+                </view>
+            </van-col>
+            <van-col span="8">
+                <view class="bg-warning font-white padding-normal" hover-class="none" hover-stop-propagation="false">
+                    加入购物车
+                </view>
+            </van-col>
+            <van-col span="8">
+                <view class="bg-danger font-white padding-normal" hover-class="none" hover-stop-propagation="false">
+                    立即购买
+                </view>
+            </van-col>
+        </van-row>
+    </view>
+</view>

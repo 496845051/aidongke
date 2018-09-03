@@ -1,0 +1,15 @@
+{
+    "navigationBarTitleText": "个人",
+    "usingComponents": {
+        "van-tag": "../../dist/tag/index",
+        "van-row": "../../dist/row/index",
+        "van-col": "../../dist/col/index",
+        "van-panel": "../../dist/panel/index",
+        "van-card": "../../dist/card/index",
+        
+        "goodsList": "../../components/goodsList/goodsList",
+        "van-cell": "../../dist/cell/index",
+        "van-cell-group": "../../dist/cell-group/index",
+        "van-stepper": "../../dist/stepper/index"
+    }
+}

@@ -1,0 +1,12 @@
+{
+    "navigationBarTitleText":"购物车",
+    "usingComponents": {
+      "van-row": "../../dist/row/index",
+      "van-col": "../../dist/col/index",
+      "van-panel": "../../dist/panel/index",
+      "van-card": "../../dist/card/index",
+      
+      "goodsList":"../../components/goodsList/goodsList",
+      "van-stepper": "../../dist/stepper/index"
+    }
+  }

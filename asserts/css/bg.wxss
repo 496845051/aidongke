@@ -1,0 +1,34 @@
+.bg-primary {
+  background-color: #4195C3; }
+
+.bg-danger {
+  background-color: #f44; }
+
+.bg-warning {
+  background-color: #f85; }
+
+.bg-success {
+  background-color: #4b0; }
+
+.bg-white {
+  background-color: white; }
+
+.bg-light-blue {
+  background-color: #cfeaee; }
+
+.bg-light-green {
+  background-color: #d0eecc; }
+
+.bg-light-orange {
+  background-color: #ebd0b2; }
+
+.bg-light-purple {
+  background-color: #d9c1dd; }
+
+.bg-light-red {
+  background-color: #f4ceca; }
+
+.bg-light-gray {
+  background-color: #e7e7e7; }
+
+/*# sourceMappingURL=bg.css.map */

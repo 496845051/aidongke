@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view>
+  <view class="caption" style="background-image: url('{{captionBgImg}}')" hover-class="none" hover-stop-propagation="false">
+    <image class="logoImg" src="{{logoImg}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+
+    </image>
+    <van-row class="font-white text-center">
+      <van-col span="12" offset="6">
+        <view class="caption-text" style="letter-spacing: 2px;" hover-class="none" hover-stop-propagation="false">
+          <view class="" style="margin-bottom: 6px" hover-class="none" hover-stop-propagation="false">
+            爱动客购
+          </view>
+        </view>
+        <view class="margin-top-normal" hover-class="none" hover-stop-propagation="false">
+          <van-row class="caption-desc ">
+            <van-col span="12">
+              <view class="" style="border-right: 1px solid white;" hover-class="none" hover-stop-propagation="false">
+                商品：12
+              </view>
+            </van-col>
+            <van-col span="11">
+              <view class="" hover-class="none" hover-stop-propagation="false">
+                访问：12
+              </view>
+            </van-col>
+          </van-row>
+        </view>
+      </van-col>
+    </van-row>
+  </view>
+
+  <view class="margin-top-large shadow" hover-class="none" hover-stop-propagation="false">
+    <van-panel>
+      <view class="padding-normal border-bottom" slot="header" hover-class="none" hover-stop-propagation="false">
+        <i class="iconfont icon-gouwukuang"></i>
+        全部商品
+      </view>
+      <view class="" hover-class="none" hover-stop-propagation="false">
+        
+        <goodsList data="{{goodsList}}"></goodsList>
+
+      </view>
+    </van-panel>
+  </view>
+
+</view>

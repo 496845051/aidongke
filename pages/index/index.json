@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText":"主页",
+  "usingComponents": {
+    "van-row": "../../dist/row/index",
+    "van-col": "../../dist/col/index",
+    "van-panel": "../../dist/panel/index",
+    "van-card": "../../dist/card/index",
+    "goodsList":"../../components/goodsList/goodsList"
+  }
+}

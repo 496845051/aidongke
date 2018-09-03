@@ -1,0 +1,4 @@
+/* components/goodsList/goodsList.wxss */
+@import '../../asserts/css/public';
+@import '../../asserts/css/bg';
+@import '../../asserts/icon/iconfont.wxss';

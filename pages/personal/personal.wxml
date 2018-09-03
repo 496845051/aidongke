@@ -1,0 +1,75 @@
+<!--pages/personal/personal.wxml-->
+<view class="" hover-class="none" hover-stop-propagation="false">
+    <view class="margin-normal personal shadow" style="background-image: url('{{personalBgImg}}')" hover-class="none" hover-stop-propagation="false">
+        <van-row>
+            <van-col span="8" class="text-right">
+                <image class="avatar" src="{{avatarUrl}}" mode="aspectFit|aspectFill|widthFix" lazy-load="false" binderror="" bindload="">
+
+                </image>
+            </van-col>
+            <van-col span="14" offset="1">
+                <view class="margin-top-large font-large font-white" hover-class="none" hover-stop-propagation="false">
+                        黑夜行
+                </view>
+            </van-col>
+        </van-row>
+    </view>
+
+    <view class=" shadow margin-top-normal " hover-class="none" hover-stop-propagation="false">
+        <van-panel title="查看订单">
+            <view>
+                <van-row class=" text-center">
+                    <van-col span="6">
+                        <view class="padding-normal border-right">
+                            <view class="padding-mini">
+                                <i class="iconfont icon-createtask" style="background-color: #4195C3"></i>
+                            </view>
+                            <view class="font-small  font-gray margin-top-small">
+                                全部订单
+                            </view>
+                        </view>
+                    </van-col>
+                    <van-col span="6">
+                        <view class="padding-normal border-right">
+                            <view class="padding-mini">
+                                <i class="iconfont icon-offline" style="background-color: #f44"></i>
+                            </view>
+                            <view class="font-small  font-gray margin-top-small">
+                                未完成
+                            </view>
+                        </view>
+                    </van-col>
+                    <van-col span="6">
+                        <view class="padding-normal border-right">
+                            <view class="padding-mini">
+                                <i class="iconfont icon-flip" style="background-color: #f85"></i>
+                            </view>
+                            <view class="font-small  font-gray margin-top-small">
+                                待收货
+                            </view>
+                        </view>
+                    </van-col>
+                    <van-col span="6">
+                        <view class="padding-normal">
+                            <view class="padding-mini">
+                                <i class="iconfont icon-success" style="background-color: #4b0"></i>
+                            </view>
+                            <view class="font-small  font-gray margin-top-small">
+                                已完成
+                            </view>
+                        </view>
+                    </van-col>
+                </van-row>
+            </view>
+        </van-panel>
+    </view>
+
+    <view class="margin-top-normal shadow" hover-class="none" hover-stop-propagation="false">
+        <van-cell-group>
+            <van-cell title="个人信息" is-link icon="edit" />
+            
+            
+            <van-cell title="关于" is-link icon="chat" />
+        </van-cell-group>
+    </view>
+</view>

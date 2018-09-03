@@ -1,0 +1,61 @@
+<!--pages/cart/cart.wxml-->
+<view class="" hover-class="none" hover-stop-propagation="false">
+
+    <view class="margin-large" hover-class="none" hover-stop-propagation="false">
+        <view class="radius-normal bg-white margin-top-normal shadow" wx:for="{{goodsList}}">
+            <view class="border-bottom">
+                <radio class="font-large margin-normal" bindtap="selectCart" data-cartIndex="{{index}}" checked="{{item.isSelected}}"></radio>
+            </view>
+            <view>
+                <view  class="padding-normal border-bottom" hover-class="none"
+                    hover-stop-propagation="false">
+                    <van-row>
+                        <van-col span="5">
+                            <image style="width: 100%" src="{{item.img}}" mode="widthFix" lazy-load="true" binderror="" bindload=""></image>
+                        </van-col>
+                        <van-col span="18" offset="1" class="font-small">
+                            <view class="bold" hover-class="none" hover-stop-propagation="false">
+                                {{item.goodsName}}
+                            </view>
+                            <view class="font-gray margin-top-small" hover-class="none" hover-stop-propagation="false">
+                                <van-row>
+                                    <van-col span="12">
+                                        单价：￥{{item.price}}
+                                    </van-col>
+                                    <van-col span="12">
+                                        数量：{{item.count}}
+                                    </van-col>
+                                </van-row>
+                            </view>
+                            <view class="price margin-top-small bold text-right font-normal" hover-class="none" hover-stop-propagation="false">
+                                总价：{{item.totail}}
+                            </view>
+
+                        </van-col>
+                    </van-row>
+                </view>
+            </view>
+        </view>
+    </view>
+
+    <view class=" bg-white" style="position: fixed;bottom:0rpx;width: 100%;">
+        <van-row>
+            <van-col span="6">
+                <radio class="font-large margin-normal" bindtap="selectChange" checked="{{isSelectAll}}">
+                    全选
+                </radio>
+            </van-col>
+            <van-col span="10">
+                <view class="text-right font-normal  margin-large" hover-class="none" hover-stop-propagation="false">
+                    合计：
+                    <text class="price">￥32.0</text>
+                </view>
+            </van-col>
+            <van-col span="8" style="height: 100%">
+                <view class="bg-danger  padding-large font-normal text-center font-white" hover-class="none" hover-stop-propagation="false">
+                    结 算
+                </view>
+            </van-col>
+        </van-row>
+    </view>
+</view>

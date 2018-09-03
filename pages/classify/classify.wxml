@@ -1,0 +1,41 @@
+<!--pages/classify/classify.wxml-->
+<view class="">
+    <!-- <view class=" bg-white font-small text-center border-bottom">
+        <van-row>
+            <van-col span="6">
+                <view bindtap="classifyChange" data-index='0' class="{{classifyIndex==0?'select-active':''}} padding-normal" hover-class="none" hover-stop-propagation="false">
+                    综合
+                </view>
+            </van-col>
+            <van-col span="6">
+                <view bindtap="classifyChange" data-index='1' class="{{classifyIndex==1?'select-active':''}}  padding-normal" hover-class="none" hover-stop-propagation="false">
+                    销售量
+                </view>
+            </van-col>
+            <van-col span="6">
+                <view style="border-right: 1px solid #eeeeee" bindtap="classifyChange" data-index='2' class="{{classifyIndex==2?'select-active':''}} padding-normal" hover-class="none" hover-stop-propagation="false">
+                    评分
+                </view>
+            </van-col>
+            <van-col span="6">
+               <view bindtap="chooseType" class="padding-normal" hover-class="none" hover-stop-propagation="false">
+                   类型
+               </view>
+            </van-col>
+        </van-row>
+    </view> -->
+    <van-row>
+        <van-col span="6">
+            <van-badge-group :active="active" bind:change="onChange">
+                <van-badge title="运动鞋" />
+                <van-badge title="衣服" />
+                <van-badge title="手表" />
+                <van-badge title="标签名称" />
+            </van-badge-group>
+        </van-col>
+        <van-col span="18">
+            <goodsList data="{{goodsList}}"></goodsList>
+        </van-col>
+    </van-row>
+
+</view>

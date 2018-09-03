@@ -1,0 +1,46 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/classify/classify",
+    "pages/cart/cart",
+    "pages/personal/personal",
+    "pages/goodsDetail/goodsDetail"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#2d8cf0",
+    "navigationBarTitleText": "商城",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#eeeeee"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#2d8cf0",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "./asserts/imgs/homepage (1).png",
+        "selectedIconPath": "./asserts/imgs/homepage.png"
+      },
+      {
+        "pagePath": "pages/classify/classify",
+        "text": "分类",
+        "iconPath": "./asserts/imgs/workbench (1).png",
+        "selectedIconPath": "./asserts/imgs/workbench.png"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "text": "购物车",
+        "iconPath": "./asserts/imgs/commodity (1).png",
+        "selectedIconPath": "./asserts/imgs/commodity.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "个人",
+        "iconPath": "./asserts/imgs/people (1).png",
+        "selectedIconPath": "./asserts/imgs/people.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,26 @@
+<view class="bg-white shadow" hover-class="none" hover-stop-propagation="false">
+    <view wx:for="{{data}}" class="padding-normal border-bottom">
+        <navigator class="" target="" url="../goodsDetail/goodsDetail" hover-class="navigator-hover" open-type="navigate">
+            <van-row>
+                    <van-col span="8">
+                        <image src="{{item.img}}"
+                            mode="widthFix" lazy-load="true" binderror="" bindload="" style="width: 100%"></image>
+                    </van-col>
+                    <van-col span="15" offset="1">
+                        <view class="font-normal goods-name" style="font-weight: 700">
+                            <van-tag wx:if="{{item.isNew}}" type="danger" style="margin-right: 5px">New</van-tag>
+                            <van-tag wx:if="{{item.isHot}}" type="danger">Hot</van-tag>
+                            {{item.name}}
+                        </view>
+                        <view class="font-gray font-small margin-top-small" hover-class="none" hover-stop-propagation="false">
+                            {{item.desc}}
+                        </view>
+                        <view class="price font-normal bold margin-top-small" hover-class="none" hover-stop-propagation="false">
+                            ￥{{item.price}}
+                        </view>
+                    </van-col>
+                </van-row>
+        </navigator>
+        
+    </view>
+</view>
